@@ -51,8 +51,8 @@ for k in ("prediction", "group", "digit", "comments", "ai_summary", "ai_info", "
 
 
 # ======================================================== cached loaders
-@st.cache_data
-def get_data():
+@st.cache_data(max_entries=1)
+def get_data(stamp):
     return dl.load_main(), dl.load_meta()
 
 
@@ -92,8 +92,8 @@ def describe_cnn(model):
     return " → ".join(parts) + f" · {model.count_params():,} parameters"
 
 
-@st.cache_data
-def get_feedback_analysis():
+@st.cache_data(max_entries=1)
+def get_feedback_analysis(stamp):
     return nlp.analyse(dl.load_feedback())
 
 
@@ -109,7 +109,7 @@ def bar(df, x, y, x_title, y_title, color=TEAL, sort=None):
 
 
 try:
-    main_df, meta = get_data()
+    main_df, meta = get_data(file_stamp(dl.DATA / "main.csv") + file_stamp(dl.DATA / "meta.json"))
     feedback_ok = (dl.DATA / "feedback.csv").exists() and (dl.DATA / "topic_keywords.json").exists()
 except FileNotFoundError as e:
     st.error(f"Data file missing: `{e.filename}`. Copy the supplied files into the `data/` folder. See README.md.")
@@ -140,7 +140,7 @@ MEANING = {1: "May need academic support - suggest a conversation for the teache
 fb_base, fb_error = None, None
 if feedback_ok:
     try:
-        fb_base = get_feedback_analysis()
+        fb_base = get_feedback_analysis(file_stamp(dl.DATA / "feedback.csv"))
     except Exception as e:
         fb_error = str(e)
 
@@ -549,8 +549,9 @@ with st.sidebar:
     st.markdown(f"- Decision tree: {'✅' if tree is not None else '❌'}\n"
                 f"- KMeans: {'✅' if kmeans is not None else '❌'}\n"
                 f"- CNN: {'✅' if (MODELS / 'images.keras').exists() else '❌'}")
-    if st.button("Reload models", help="Clear the model cache and load the files in models/ again"):
+    if st.button("Reload models", help="Clear the cache and load the files in data/ and models/ again"):
         st.cache_resource.clear()
+        st.cache_data.clear()
         st.rerun()
     st.divider()
     st.caption("Decision Tree · KMeans · CNN · NLTK VADER · Groq (optional). Free tools only.")
