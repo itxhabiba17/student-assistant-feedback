@@ -1,6 +1,0 @@
-record_id,G1,G2,studytime,failures,schoolsup,famsup,internet
-P01_0011,10,8,2,0,no,yes,yes
-P01_0045,10,10,2,1,yes,no,yes
-P01_0005,6,10,2,0,no,yes,no
-P01_0023,15,15,2,0,no,no,yes
-P01_0027,12,12,1,0,no,yes,yes
