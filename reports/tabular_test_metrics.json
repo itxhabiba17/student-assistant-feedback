@@ -1,0 +1,22 @@
+{
+  "test_class_counts": {
+    "0": 28,
+    "1": 50
+  },
+  "results": [
+    {
+      "model": "Decision tree (test)",
+      "accuracy": 0.91,
+      "macro_f1": 0.896,
+      "class1_precision": 0.877,
+      "class1_recall": 1.0
+    },
+    {
+      "model": "Baseline (test)",
+      "accuracy": 0.641,
+      "macro_f1": 0.391,
+      "class1_precision": 0.641,
+      "class1_recall": 1.0
+    }
+  ]
+}

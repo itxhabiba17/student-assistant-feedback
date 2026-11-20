@@ -1,0 +1,6 @@
+record_id,G1,G2,studytime,failures,schoolsup,famsup,internet
+P01M_0007,9,8,2,1,yes,no,no
+P01M_0095,6,7,2,2,yes,no,no
+P01M_0021,8,10,3,1,yes,no,yes
+P01M_0046,12,12,1,0,no,no,yes
+P01M_0048,12,12,3,0,no,no,yes

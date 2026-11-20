@@ -1,0 +1,25 @@
+metric,original,modified,difference
+Data - records,395,520,+125
+Data - train / val / test,276 / 59 / 60,364 / 78 / 78,changed
+Data - needs support (train),0.33,0.643,+0.313
+Data - average G2 (train),10.8,8.813,-1.987
+Data - comments (neg / neu / pos),10 / 10 / 10,16 / 10 / 14,changed
+Decision tree - validation accuracy,0.864,0.962,+0.098
+Decision tree - validation macro F1,0.849,0.959,+0.110
+Decision tree - test accuracy,0.917,0.91,-0.007
+Decision tree - test macro F1,0.907,0.896,-0.011
+Decision tree - test class 1 precision,0.857,0.877,+0.020
+Decision tree - test class 1 recall,0.9,1.0,+0.100
+Baseline - test accuracy,0.667,0.641,-0.026
+Baseline - test macro F1,0.4,0.391,-0.009
+Decision tree - test errors,5,7,+2
+Data - test rows,60,78,+18
+KMeans - group sizes (sorted),25 / 107 / 144,55 / 147 / 162,changed
+KMeans - silhouette k=3,0.321,0.268,-0.053
+CNN - epochs run,15,15,+0
+CNN - best validation accuracy,0.967,0.923,-0.044
+CNN - test accuracy,0.968,0.924,-0.044
+CNN - test macro F1,0.968,0.925,-0.043
+VADER - accuracy vs labels,0.967,0.9,-0.067
+VADER - macro F1,0.967,0.897,-0.070
+VADER - disagreements,1,4,+3

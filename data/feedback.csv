@@ -1,0 +1,41 @@
+comment_id,text,sentiment_label
+P01M_F01,I loved how the teaching connected maths to real life.,positive
+P01M_F02,Practice sheets are placed on the front desk.,neutral
+P01M_F03,The lesson on fractions was clear and really enjoyable.,positive
+P01M_F04,Fast internet in the lab made the online assignment smooth.,positive
+P01M_F05,The lesson started at nine and ended at ten.,neutral
+P01M_F06,Internet access requires the student login.,neutral
+P01M_F07,The classroom was too hot and noisy to concentrate.,negative
+P01M_F08,The new classroom projector makes the slides easy to read.,positive
+P01M_F09,The classroom projector failed again and we lost the whole lesson.,negative
+P01M_F10,The teaching pace was so fast that I was lost and frustrated.,negative
+P01M_F11,I felt ignored when I asked a question during the lesson.,negative
+P01M_F12,"The internet was down all week, so I could not submit my work.",negative
+P01M_F13,The lesson notes were full of errors and very confusing.,negative
+P01M_F14,Thank you for the clear and friendly teaching today.,positive
+P01M_F15,Our teacher explains difficult ideas with great patience.,positive
+P01M_F16,Feedback came back too late to help me improve.,negative
+P01M_F17,The teacher used the whiteboard for the examples.,neutral
+P01M_F18,Too much homework this week left me exhausted.,negative
+P01M_F19,The computer room is quiet and comfortable for studying.,positive
+P01M_F20,The classroom is on the first floor near the library.,neutral
+P01M_F21,I am grateful for the extra practice problems before the quiz.,positive
+P01M_F22,Each exercise has four short questions.,neutral
+P01M_F23,There are twenty computers in the second lab.,neutral
+P01M_F24,The computer lab is much better after the new chairs arrived.,positive
+P01M_F25,The assignment is due next Monday.,neutral
+P01M_F26,We covered chapter four in the textbook.,neutral
+P01M_F27,I hate that the slides are never shared after class.,negative
+P01M_F28,"Nobody explained how the assignment would be marked, which is unfair.",negative
+P01M_F29,"The internet kept failing, which ruined the online test.",negative
+P01M_F30,The quiz will cover topics from weeks one to three.,neutral
+P01M_F31,The lesson felt boring and pointless today.,negative
+P01M_F32,I am worried because the practice tests are much harder than class work.,negative
+P01M_F33,The group exercise was fun and helped me understand the topic.,positive
+P01M_F34,The feedback on my assignment was helpful and encouraging.,positive
+P01M_F35,The assignment instructions were confusing and stressful.,negative
+P01M_F36,"Great revision lesson, I finally feel confident.",positive
+P01M_F37,"The exercise answers had mistakes, which was disappointing.",negative
+P01M_F38,I liked the short practice quiz at the start of the lesson.,positive
+P01M_F39,Broken computers in the lab wasted half of our practice time.,negative
+P01M_F40,The extra exercise session really helped me catch up.,positive

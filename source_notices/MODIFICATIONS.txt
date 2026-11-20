@@ -1,0 +1,21 @@
+MODIFIED DATASET PACK - for comparison only
+==========================================
+Made on 2026-11-20. Same folders, file names and columns as the original Project_01 pack.
+
+What changed
+- data/main.csv: 520 SYNTHETIC student records for an imaginary "different school".
+  Each record starts from a randomly chosen real record and is changed: G1 about 1.5 marks lower,
+  G2 follows the real G1->G2 change plus noise, 20% new study-time values, 15% more past failures,
+  15% of yes/no answers flipped. needs_support comes from a noisy estimated final mark (< 10).
+  Split 364 / 78 / 78 (train / validation / test), stratified. These are NOT real students.
+- data/images.npz: a different MNIST subset (mlxtend's bundled 5,000 digits), 160/40/50 per digit,
+  made to look like rough scans: rotation up to 15 degrees, shift up to 2 px, blur, grain noise.
+- data/feedback.csv: 40 NEW authored English comments (16 negative, 14 positive, 10 neutral),
+  reference labels written by meaning. Not real student responses.
+- data/example_inputs.csv, data/image_manifest.csv, sample_images/, data/meta.json: regenerated.
+
+Unchanged
+- data/topic_keywords.json, data/prompt_test_cases.json, nltk_data/, source_notices/
+
+Sources: derived from UCI Student Performance (synthetic changes); MNIST via mlxtend;
+NLTK VADER lexicon (see nltk_LICENSE.txt).
